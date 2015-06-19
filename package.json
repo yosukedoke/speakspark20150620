@@ -1,0 +1,25 @@
+{
+  "name": "SpeakSpark20150620",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosukedoke/speakspark20150620.git"
+  },
+  "author": "doke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosukedoke/speakspark20150620/issues"
+  },
+  "homepage": "https://github.com/yosukedoke/speakspark20150620",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
