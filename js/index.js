@@ -1,3 +1,3 @@
+(function(window, $) {
 
-var test;
-alert('test');
+})(this, jQuery);
