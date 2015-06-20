@@ -1,3 +1,4 @@
+/* Initialize */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,4 +53,152 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+body {
+  font-family: serif;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Modules */
+[class^=btn] {
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.l-grid {
+  display: table;
+  width: 100%;
+}
+.l-grid [class^=col] {
+  display: table-cell;
+}
+.l-grid .col3 {
+  width: 25%;
+}
+.l-grid .col4 {
+  width: 33.3%;
+}
+.l-grid .col6 {
+  width: 50%;
+}
+
+[class^=scene] {
+  width: 960px;
+  margin: 0 auto 60px;
+}
+[class^=scene] h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+[class^=scene] h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+[class^=scene] h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+[class^=scene] p, [class^=scene] ul, [class^=scene] ol, [class^=scene] dl, [class^=scene] table {
+  margin: 0 0 30px;
+}
+
+/* Scenes */
+.scene1 {
+  background: red;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+.scene1 img[class^=works] {
+  position: absolute;
+  display: none;
+}
+.scene1 h1 span {
+  display: block;
+}
+.scene1 h1 .sub-title {
+  font-size: 30px;
+}
+.scene1 h1 .main-title {
+  font-family: 'Helvetica Neue Light';
+  font-size: 72px;
+  color: #ffffff;
+}
+
+.scene2 p {
+  line-height: 2.5;
+  font-size: 30px;
+}
+
+.scene3 .l-grid {
+  position: relative;
+}
+.scene3 [class^=personality] {
+  width: 256px;
+  height: 256px;
+  background: #c4afaa;
+  border-radius: 128px;
+  padding: 30px;
+}
+.scene3 [class^=personality] h3 {
+  text-align: center;
+  vertical-align: middle;
+}
+.scene3 [class^=personality] .detail {
+  display: none;
+}
+.scene3 [class^=personality]:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 3px;
+}
+.scene3 [class^=personality]:hover .detail {
+  display: block;
+}
+
+.scene4 h2 {
+  text-align: center;
+}
+.scene4 .role h3 {
+  text-align: center;
+  border-bottom: 1px solid #666;
+  margin: 0;
+  padding: 15px;
+}
+.scene4 .role .detail {
+  display: none;
+  margin: 0;
+  background: #f0f0f0;
+  padding: 30px;
+}
+.scene4 .role:hover .detail {
+  display: block;
+}
+
+.scene5 dt {
+  font-weight: bold;
+}
+.scene5 p, .scene5 li, .scene5 dt, .scene5 dd {
+  font-size: 14px;
+}
+.scene5 .btn-entry {
+  background: red;
+  margin-top: 20px;
 }
